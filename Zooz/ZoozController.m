@@ -58,9 +58,11 @@
     
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"Create Customer response  = %@",response);
-        completion(error,response);
+        ZoozCustomer *customer = [[ZoozCustomer alloc] initWithDictioanry:response];
+        NSDictionary *dict = @{@"response" : response,@"customer":customer};
+        completion(error,dict);
     };
-    [_zoozServer createToken:request withUrl:url completionHandler:complete];
+    [_zoozServer createCustomer:request withUrl:url completionHandler:complete];
 };
 
 - (void)storeToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion{

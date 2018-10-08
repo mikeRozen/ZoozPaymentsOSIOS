@@ -67,7 +67,8 @@
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil){
             NSDictionary *dict = [self parsingData:data];
-            completion(nil,dict);
+            NSError *error = [self internalError:response];
+            completion(error,dict);
         }else{
             ZLog(@"createToken Failed Error: %@", error.localizedDescription);
             completion(error,nil);
@@ -81,7 +82,8 @@
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil){
             NSDictionary *dict = [self parsingData:data];
-            completion(nil,dict);
+            NSError *error = [self internalError:response];
+            completion(error,dict);
         }else{
             ZLog(@"createCustomer Failed Error: %@", error.localizedDescription);
             completion(error,nil);
@@ -95,7 +97,8 @@
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil){
             NSDictionary *dict = [self parsingData:data];
-            completion(nil,dict);
+            NSError *error = [self internalError:response];
+            completion(error,dict);
         }else{
             ZLog(@"Stored token Failed Error: %@", error.localizedDescription);
             completion(error,nil);
@@ -109,7 +112,8 @@
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil){
             NSDictionary *dict = [self parsingData:data];
-            completion(nil,dict);
+            NSError *error = [self internalError:response];
+            completion(error,dict);
         }else{
             ZLog(@"Stored token Failed Error: %@", error.localizedDescription);
             completion(error,nil);
@@ -123,9 +127,8 @@
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil){
             NSDictionary *dict = [self parsingData:data];
-            //NSLog(@"dict = %@",dict);
-            
-            completion(nil,dict);
+            NSError *error = [self internalError:response];
+            completion(error,dict);
         }else{
             ZLog(@"RetrieveCustomerbByReferenceWithUrl Failed Error: %@", error.localizedDescription);
             completion(error,nil);
@@ -152,6 +155,16 @@
         NSAssert(NO, @"Parsing Failed");
     }
     return dict;
+}
+
+- (NSError *)internalError:(NSURLResponse *)originResponse{
+    NSHTTPURLResponse *response = (NSHTTPURLResponse *)originResponse;
+    if ((response.statusCode >= 300 || response.statusCode < 200)) {
+        //We may need to split the errors in different error domain
+        NSError *error = [[NSError alloc] initWithDomain:@"Internal Error" code:1 userInfo:@{NSLocalizedDescriptionKey: @"Invalid user input"}];
+        return error;
+    }
+    return nil;
 }
 
 

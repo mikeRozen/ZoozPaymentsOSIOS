@@ -63,10 +63,8 @@
     
     //Customer
     ZoozCustomer *customer = [[ZoozCustomer alloc] init];
-    customer.customerReference = @"FAFADAD";
-    customer.firstName = @"John";
-    customer.lastName = @"Taylor";
-    
+    customer.customerReference = @"XXX";
+    customer.firstName = @"Yuval";
     //Shipping Address
     ZoozAddress *address = [[ZoozAddress alloc] init];
     address.countryCode = @"USA";

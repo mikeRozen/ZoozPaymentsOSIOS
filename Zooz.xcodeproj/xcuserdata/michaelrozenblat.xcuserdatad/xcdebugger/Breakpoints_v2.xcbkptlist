@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.8931"
+            timestampString = "560684260.784943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-createToken:withUrl:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/ZoozController.m"
-            timestampString = "560123099.894012"
+            timestampString = "560684260.786302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.8945889"
+            timestampString = "560684260.786888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-createToken:withUrl:completionHandler:"
             landmarkType = "7">
             <Locations>
@@ -105,11 +105,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.895131"
+            timestampString = "560684260.788015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "-createToken:withUrl:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -121,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.896392"
+            timestampString = "560684260.7886029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "-testAddCard"
             landmarkType = "7">
          </BreakpointContent>
@@ -137,11 +137,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.89868"
+            timestampString = "560684260.789368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "-testSimple"
             landmarkType = "7">
          </BreakpointContent>
@@ -153,11 +153,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.899372"
+            timestampString = "560684260.7901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-createCustomer:withUrl:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -169,7 +169,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/ZoozController.m"
-            timestampString = "560123099.8998899"
+            timestampString = "560684260.790554"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -181,64 +181,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.900525"
+            timestampString = "560684260.790996"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-testAddCustomer"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ZoozTests testAddCustomer]"
-                  moduleName = "ZoozTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
-                  timestampString = "560123102.104586"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "592">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__28-[ZoozTests testAddCustomer]_block_invoke"
-                  moduleName = "ZoozTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
-                  timestampString = "560123102.109543"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.110"
-                  moduleName = "ZoozTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
-                  timestampString = "560123102.114136"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -248,11 +201,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.901135"
+            timestampString = "560684260.791544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-testAddCard"
             landmarkType = "7">
          </BreakpointContent>
@@ -264,11 +217,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.901787"
+            timestampString = "560684260.792129"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-testStoreToken"
             landmarkType = "7">
          </BreakpointContent>
@@ -280,11 +233,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.903056"
+            timestampString = "560684260.792657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "-testSimple"
             landmarkType = "7">
          </BreakpointContent>
@@ -296,11 +249,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.903711"
+            timestampString = "560684260.793201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "-testSimple"
             landmarkType = "7">
          </BreakpointContent>
@@ -312,11 +265,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/ZoozController.m"
-            timestampString = "560123099.904501"
+            timestampString = "560684260.7937419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "-deleteToken:inCustomer:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -328,7 +281,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.9063441"
+            timestampString = "560684260.794155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
@@ -344,7 +297,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.906842"
+            timestampString = "560684260.795239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "149"
@@ -360,11 +313,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.907456"
+            timestampString = "560684260.795984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "-deleteToken:inCustomer:withUrl:completionHandler:"
             landmarkType = "7">
             <Locations>
@@ -423,11 +376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.908003"
+            timestampString = "560684260.796386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-deleteToken:inCustomer:withUrl:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -439,11 +392,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.9085211"
+            timestampString = "560684260.79681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-deleteToken:inCustomer:withUrl:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -455,7 +408,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.9090199"
+            timestampString = "560684260.797212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
@@ -471,13 +424,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.909633"
+            timestampString = "560684260.797613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
-            landmarkName = "ZoozTests"
-            landmarkType = "3">
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "-testPerformanceExample"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -487,11 +440,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "560123099.910298"
+            timestampString = "560684260.798133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252">
+            startingLineNumber = "245"
+            endingLineNumber = "245">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -501,12 +454,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.910825"
+            timestampString = "560684260.798566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "-typeFromAttributes:"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-typeFromAttributes:attributes:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -517,11 +470,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.912558"
+            timestampString = "560684260.799381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "-classWithPropertiesOfDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -533,11 +486,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.91326"
+            timestampString = "560684260.800588"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-classWithPropertiesOfDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -549,7 +502,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.9139481"
+            timestampString = "560684260.8014981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -565,11 +518,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.914588"
+            timestampString = "560684260.802135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-createCustomer:withUrl:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -581,7 +534,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.915045"
+            timestampString = "560684260.8025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
@@ -596,28 +549,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.915464"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "-retrieveCustomerbByReferenceWithUrl:completionHandler:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.915871"
+            timestampString = "560684260.802848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-classWithPropertiesOfDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -629,11 +566,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/ZoozController.m"
-            timestampString = "560123099.916639"
+            timestampString = "560684260.80347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-retriveCustomerByReference:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -645,7 +582,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/beans/ZoozCustomer.m"
-            timestampString = "560123099.917025"
+            timestampString = "560684260.803836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -661,11 +598,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.9171031"
+            timestampString = "560684260.803905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "-classWithPropertiesOfDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -677,11 +614,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.917775"
+            timestampString = "560684260.811438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-classWithPropertiesOfDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -693,7 +630,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.977165"
+            timestampString = "560684260.812673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-classWithPropertiesOfDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
+            timestampString = "560684260.8133841"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-classWithPropertiesOfDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
+            timestampString = "560684260.813983"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -709,43 +678,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.9777679"
+            timestampString = "560684260.814525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-classWithPropertiesOfDictionary:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.978334"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-classWithPropertiesOfDictionary:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "560123099.978887"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-classWithPropertiesOfDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -757,7 +694,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/internal/ZoozServer.m"
-            timestampString = "560123099.979429"
+            timestampString = "560684260.815111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
@@ -773,11 +710,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/ZoozController.m"
-            timestampString = "560123099.979759"
+            timestampString = "560684260.8154759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "-retriveCustomerByReference:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -789,12 +726,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/ZoozController.m"
-            timestampString = "560123099.980054"
+            timestampString = "560684260.8160419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "-createToken:completionHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zooz/ZoozController.m"
+            timestampString = "560684260.816658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-createCustomer:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
