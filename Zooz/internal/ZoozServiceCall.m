@@ -7,6 +7,7 @@
 //
 
 #import "ZoozServiceCall.h"
+#import "Zooz-Constants.h"
 
 @implementation ZoozServiceCall
 

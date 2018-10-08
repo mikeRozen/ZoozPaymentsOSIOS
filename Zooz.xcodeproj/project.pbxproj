@@ -69,7 +69,6 @@
 		E1D2DFC22156384400F213D1 /* ZoozPaymentMethodDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoozPaymentMethodDetails.h; sourceTree = "<group>"; };
 		E1D2DFC32156384400F213D1 /* ZoozPaymentMethodDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoozPaymentMethodDetails.m; sourceTree = "<group>"; };
 		E1D2DFD22156E12A00F213D1 /* Zooz-Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zooz-Constants.h"; sourceTree = "<group>"; };
-		E1D2DFD42156E32600F213D1 /* Zooz-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zooz-Header.pch"; sourceTree = "<group>"; };
 		E1D2DFD52157D48E00F213D1 /* ZoozAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoozAddress.h; sourceTree = "<group>"; };
 		E1D2DFD62157D48E00F213D1 /* ZoozAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoozAddress.m; sourceTree = "<group>"; };
 		E1D2DFD92157F7BC00F213D1 /* ZoozAdditionalDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoozAdditionalDetails.h; sourceTree = "<group>"; };
@@ -148,7 +147,6 @@
 				E1D2DF83214FF1C400F213D1 /* Info.plist */,
 				E1D2DF99214FF26900F213D1 /* ZoozController.h */,
 				E1D2DF9A214FF26900F213D1 /* ZoozController.m */,
-				E1D2DFD42156E32600F213D1 /* Zooz-Header.pch */,
 			);
 			path = Zooz;
 			sourceTree = "<group>";
@@ -523,8 +521,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Zooz-Header.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Zooz/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -550,8 +548,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Zooz-Header.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Zooz/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
