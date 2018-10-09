@@ -9,6 +9,7 @@
 #import "ZoozController.h"
 #import "ZoozServer.h"
 #import "ZoozLogger.h"
+#import "Zooz-Constants.h"
 
 #define BASE_ZOOZ_URL @"https://api.paymentsos.com/"
 
@@ -40,19 +41,20 @@
     _allowLogging = allowLogging;
 }
 
-- (void)createToken:(ZoozRequest *)request completionHandler:(void (^)(NSError *error, id respondObject))completion{
+- (void)createToken:(ZoozRequest *)request completionHandler:(Completion)completion{
     NSURL *url = [NSURL URLWithString:@"tokens" relativeToURL:_baseUrl];
     ZLog(@"url = %@",url);
     
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"Create Token response  = %@",response);
         ZoozPaymentMethodDetails *payment = [[ZoozPaymentMethodDetails alloc] initWithDictionary:response];
-        completion(error,response);
+        NSDictionary *dict = @{@"response": response,@"paymentMethod": payment};
+        completion(error,dict);
     };
     [_zoozServer createToken:request withUrl:url completionHandler:complete];
 }
 
-- (void)createCustomer:(ZoozRequest *)request completionHandler:(void (^)(NSError *error, id respondObject))completion{
+- (void)createCustomer:(ZoozRequest *)request completionHandler:(Completion)completion{
     NSURL *url = [NSURL URLWithString:@"customers" relativeToURL:_baseUrl];
     ZLog(@"url = %@",url);
     
@@ -65,7 +67,7 @@
     [_zoozServer createCustomer:request withUrl:url completionHandler:complete];
 };
 
-- (void)storeToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion{
+- (void)storeToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(Completion)completion{
     //https://api.paymentsos.com/customers/{{customerId}}/payment-methods/{{token}}
     NSString *urlString = [NSString stringWithFormat:@"customers/%@/payment-methods/%@",customer.id,token];
     NSURL *url = [NSURL URLWithString:urlString relativeToURL:_baseUrl];
@@ -74,25 +76,13 @@
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"Store Token in Customer  = %@",response);
         ZoozPaymentMethodDetails *payment = [[ZoozPaymentMethodDetails alloc] initWithDictionary:response];
-        completion(error,response);
+        NSDictionary *dict = @{@"response" : response,@"paymentMethod": payment};
+        completion(error,dict);
     };
     [_zoozServer storeToken:token inCustomer:customer withUrl:url completionHandler:complete];
 }
 
-- (void)storeToken:(NSString *)token byCustomerReference:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion{
-    //https://api.paymentsos.com/customers/{{customerId}}/payment-methods/{{token}}
-    NSString *urlString = [NSString stringWithFormat:@"customers?customer_reference=%@/payment-methods/%@",customer.customerReference,token];
-    NSURL *url = [NSURL URLWithString:urlString relativeToURL:_baseUrl];
-    ZLog(@"url = %@",url);
-    
-    Completion complete = ^(NSError *error,NSDictionary *response){
-        ZLog(@"Store Token in Customer  = %@",response);
-        completion(error,response);
-    };
-    [_zoozServer storeToken:token inCustomer:customer withUrl:url completionHandler:complete];
-}
-
-- (void)deleteToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion{
+- (void)deleteToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(Completion)completion{
     //https://api.paymentsos.com/customers/{{customerId}}/payment-methods/{{token}}
     NSString *urlString = [NSString stringWithFormat:@"customers/%@/payment-methods/%@",customer.id,token];
     NSURL *url = [NSURL URLWithString:urlString relativeToURL:_baseUrl];
@@ -105,7 +95,7 @@
     [_zoozServer deleteToken:token inCustomer:customer withUrl:url completionHandler:complete];
 }
 
-- (void)retriveCustomerByReference:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion{
+- (void)retriveCustomerByReference:(ZoozCustomer *)customer completionHandler:(Completion)completion{
     NSString *urlString = [NSString stringWithFormat:@"customers?customer_reference=%@",customer.customerReference];
     NSURL *url = [NSURL URLWithString:urlString relativeToURL:_baseUrl];
     ZLog(@"url = %@",url);
@@ -113,10 +103,28 @@
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"retriveCustomer  = %@",response);
         ZoozCustomer *customer = [[ZoozCustomer alloc] initWithDictioanry:response];
-        completion(error,response);
+        NSDictionary *dict = @{@"response": response,@"customer":customer};
+        completion(error,dict);
     };
     [_zoozServer retrieveCustomerbByReferenceWithUrl:url completionHandler:complete];
 }
+
+
+
+
+//- (void)storeToken:(NSString *)token byCustomerReference:(ZoozCustomer *)customer completionHandler:(Completion)completion{
+//    //https://api.paymentsos.com/customers/{{customerId}}/payment-methods/{{token}}
+//    NSString *urlString = [NSString stringWithFormat:@"customers?customer_reference=%@/payment-methods/%@",customer.customerReference,token];
+//    NSURL *url = [NSURL URLWithString:urlString relativeToURL:_baseUrl];
+//    ZLog(@"url = %@",url);
+//
+//    Completion complete = ^(NSError *error,NSDictionary *response){
+//        ZLog(@"Store Token in Customer  = %@",response);
+//        completion(error,response);
+//    };
+//    [_zoozServer storeToken:token inCustomer:customer withUrl:url completionHandler:complete];
+//}
+
 
 
 

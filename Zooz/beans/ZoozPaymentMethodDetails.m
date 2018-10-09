@@ -22,21 +22,6 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict{
     if (self = [self init]){
         [self classWithPropertiesOfDictionary:dict];
-//        _cardNumber = dict[@"card_number"];
-//        _cvvNumber  = dict[@"credit_card_cvv"];
-//        _holderName = dict[@"holder_name"];
-//
-//        NSString *expirationDate = dict[@"expiration_date"];
-//        if (!isEmpty(expirationDate)){
-//            NSArray *expDateArray = [expirationDate componentsSeparatedByString:@"/"];
-//            _expirationMonth = expDateArray[0];
-//            _expirationYear  = expDateArray[1];
-//        }
-//
-//        NSString *tokenType = dict[@"token_type"];
-//        if (!isEmpty(tokenType)){
-//            _tokenType = tokenType;
-//        }
     }
     return self;
 }
@@ -46,31 +31,31 @@
 }
 
 
-//- (NSDictionary *)toDictionary{
-//    
-//    NSMutableDictionary *dict = [NSMutableDictionary new];
-//    NSAssert(!isEmpty(_tokenType), @"Token Type Must Not Be Empty");
-//    [dict setObject:_tokenType forKey:@"token_type"];
-//    NSAssert(!isEmpty(_cardNumber), @"Card Number Must Not Be Empty");
-//    [dict setObject:_cardNumber forKey:@"card_number"];
-//    NSAssert(!isEmpty(_cardHolderName), @"Card Holder Name Must Not Be Empty");
-//    [dict setObject:_cardHolderName forKey:@"holder_name"];
-//    
-//    if (!isEmpty(_cvvNumber)){
-//        [dict setObject:_cvvNumber forKey:@"credit_card_cvv"];
-//    }
-//    if (!isEmpty(_expirationMonth) && !isEmpty(_expirationYear)){
-//        [dict setObject:[self expirationDate] forKey:@"expiration_date"];
-//    }
-//    
-//    NSDictionary *addressDict = [self.address toDictionary];
-//    if (!isEmpty(addressDict)){
-//        [dict setObject:addressDict forKey:@"billing_address"];
-//    }
-//    
-//    return dict;
-//}
+- (BOOL)isEqual:(id)object{
+    if (self == object){
+        return YES;
+    }
+    if (![object isKindOfClass:[self class]]){
+        return NO;
+    }
+    
+    return [self isEqualToPayment:object];
+        
+}
 
+- (BOOL)isEqualToPayment:(ZoozPaymentMethodDetails *)paymet{
+    if ([_token isEqualToString:paymet.token]){
+        return YES;
+    }
+    BOOL sameExpDate = [[self expirationDate] isEqualToString:[paymet expirationDate]];
+    BOOL sameLast4Digits = [[self last4Digits] isEqualToString:[paymet last4Digits]];
+    
+    if (sameExpDate && sameLast4Digits ){
+        return YES;
+    }
+    
+    return NO;
+}
 
 
 

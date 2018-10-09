@@ -10,7 +10,5 @@
 
 @interface ZoozObject : NSObject
 
-
-
 - (NSDictionary *)toDictionary;
 @end

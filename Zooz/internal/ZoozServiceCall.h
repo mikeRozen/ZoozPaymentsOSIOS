@@ -13,6 +13,7 @@
 #import "ZoozCustomer.h"
 #import "ZoozAddress.h"
 
+typedef void(^Completion)(NSError *error,NSDictionary *response);
 
 @interface ZoozServiceCall : NSObject
 

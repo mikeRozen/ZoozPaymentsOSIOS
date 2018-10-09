@@ -46,6 +46,8 @@
 
 - (instancetype)init;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (BOOL)isEqual:(id)object;
+- (BOOL)isEqualToPayment:(ZoozPaymentMethodDetails *)paymet;
 
 
 @end

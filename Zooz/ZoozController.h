@@ -22,13 +22,10 @@
 //TODO:Documentation
 - (instancetype)initWithAppId:(NSString * )appId publicKey:(NSString *)publicKey privateKey:(NSString *) privateKey isSandbox:(BOOL)isSandBox;
 
-- (void)createToken:(ZoozRequest *)request completionHandler:(void (^)(NSError *error, id respondObject))completion;
-- (void)storeToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion;
-- (void)storeToken:(NSString *)token byCustomerReference:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion;
-
-- (void)deleteToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion;
-
-- (void)createCustomer:(ZoozRequest *)request completionHandler:(void (^)(NSError *error, id respondObject))completion;
-- (void)retriveCustomerByReference:(ZoozCustomer *)customer completionHandler:(void (^)(NSError *error, id respondObject))completion;
+- (void)createToken:(ZoozRequest *)request completionHandler:(Completion)completion;
+- (void)storeToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(Completion)completion;
+- (void)deleteToken:(NSString *)token inCustomer:(ZoozCustomer *)customer completionHandler:(Completion)completion;
+- (void)createCustomer:(ZoozRequest *)request completionHandler:(Completion)completion;
+- (void)retriveCustomerByReference:(ZoozCustomer *)customer completionHandler:(Completion)completion;
     
 @end

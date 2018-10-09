@@ -20,9 +20,10 @@
 
 @property (nonatomic,readonly) NSString *created;
 @property (nonatomic,readonly) NSString *modified;
-@property (nonatomic,readonly) NSArray *paymentMethods;
+@property (nonatomic,readonly) NSMutableArray *paymentMethods;
 
 - (instancetype)initWithDictioanry:(NSDictionary *)dict;
+- (void)addPaymentMethodToken:(ZoozPaymentMethodDetails *)payment;
 
 
 @end

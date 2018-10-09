@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-@class ZoozRequest;
+#import "ZoozRequest.h"
+//@class ZoozRequest;
 @class ZoozCustomer;
 //TODO: nullable
-typedef void(^Completion)(NSError *error,NSDictionary *response);
+
 
 
 

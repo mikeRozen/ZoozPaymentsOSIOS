@@ -132,30 +132,6 @@
     }];
 }
 
-- (void)testStoreTokenByCustomereReference{
-    
-    //Customer
-    ZoozCustomer *customer = [[ZoozCustomer alloc]init];
-    customer.id = @"a46395f4-fdbc-4da8-b160-2a38518ac515";
-    customer.customerReference = @"FAFADAD";
-    NSString *token = @"d5afeae9-f8f3-4e82-89e3-f0a22ce1a3ae";
-    
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Finishing Customer"];
-    
-    [_zoozController storeToken:token byCustomerReference:customer completionHandler:^(NSError *error, id respondObject) {
-        NSLog(@"respondObject = %@",respondObject);
-        XCTAssertTrue(YES);
-        [expectation fulfill];
-        
-    }];
-    
-    [self waitForExpectationsWithTimeout:10.0 handler:^(NSError * _Nullable error) {
-        if (error){
-            XCTFail(@"Probably Timmed Out Error = %@",error.description);
-        }
-    }];
-}
-
 - (void)testDeletePaymentMethod{
    
     //Customer
