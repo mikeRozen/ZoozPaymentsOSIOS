@@ -8,6 +8,7 @@
 
 #import "ZoozObject.h"
 @class ZoozAddress;
+@class ZoozPaymentMethodDetails;
 
 @interface ZoozCustomer : ZoozObject
 @property (nonatomic) NSString *customerReference;

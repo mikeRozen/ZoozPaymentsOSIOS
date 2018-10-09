@@ -38,7 +38,7 @@
     paymentDetails.cvvNumber = @"123";
     paymentDetails.expirationMonth = @"12";
     paymentDetails.expirationYear = @"29";
-    paymentDetails.holderName = @"John Mark";
+    paymentDetails.holderName = @"Harry Potter";
     
     //Request
     ZoozRequest *request = [[ZoozRequest alloc] initWithPaymentMethod:paymentDetails];
@@ -113,7 +113,7 @@
     //Customer
     ZoozCustomer *customer = [[ZoozCustomer alloc]init];
     customer.id = @"a46395f4-fdbc-4da8-b160-2a38518ac515";
-    NSString *token = @"730ff333-402b-4446-8086-e0a2e7571aa0";
+    NSString *token = @"1ccf7199-ff54-4879-bda9-d29cef9e3755";
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"Finishing Customer"];
     
