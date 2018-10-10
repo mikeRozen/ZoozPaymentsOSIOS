@@ -24,21 +24,21 @@
 @property (nonatomic) ZoozIdentityDocuments *identityDocuments;
 @property (nonatomic) NSDictionary *additionalDetails;
 
-@property (nonatomic,readonly) BOOL passLuhnValidation;
-@property (nonatomic,readonly) NSString *binNumber;
-@property (nonatomic,readonly) NSString *vendor;
-@property (nonatomic,readonly) NSString *issuerName;
-@property (nonatomic,readonly) NSString *cardType;
-@property (nonatomic,readonly) NSString *level;
-@property (nonatomic,readonly) NSString *countryCode;
-@property (nonatomic,readonly) NSString *state;
-@property (nonatomic,readonly) NSString *token;
-@property (nonatomic,readonly) NSString *created;
-@property (nonatomic,readonly) NSString *type;
-@property (nonatomic,readonly) NSString *href;
-@property (nonatomic,readonly) NSString *customer;
-@property (nonatomic,readonly) NSString *last4Digits;
-@property (nonatomic,readonly) NSString *issuer;
+@property (nonatomic) BOOL passLuhnValidation;
+@property (nonatomic) NSString *binNumber;
+@property (nonatomic) NSString *vendor;
+@property (nonatomic) NSString *issuerName;
+@property (nonatomic) NSString *cardType;
+@property (nonatomic) NSString *level;
+@property (nonatomic) NSString *countryCode;
+@property (nonatomic) NSString *state;
+@property (nonatomic) NSString *token;
+@property (nonatomic) NSString *created;
+@property (nonatomic) NSString *type;
+@property (nonatomic) NSString *href;
+@property (nonatomic) NSString *customer;
+@property (nonatomic) NSString *last4Digits;
+@property (nonatomic) NSString *issuer;
 
 
 @property (nonatomic,readonly) NSDictionary *rawDictionary;
