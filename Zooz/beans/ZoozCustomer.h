@@ -19,9 +19,9 @@
 @property (nonatomic) ZoozAddress *shippingAddress;
 @property (nonatomic) NSDictionary *additionalDetails;
 
-@property (nonatomic,readonly) NSString *created;
-@property (nonatomic,readonly) NSString *modified;
-@property (nonatomic,readonly) NSMutableArray *paymentMethods;
+@property (nonatomic) NSString *created;
+@property (nonatomic) NSString *modified;
+@property (nonatomic) NSMutableArray *paymentMethods;
 
 - (instancetype)initWithDictioanry:(NSDictionary *)dict;
 - (void)addPaymentMethodToken:(ZoozPaymentMethodDetails *)payment;

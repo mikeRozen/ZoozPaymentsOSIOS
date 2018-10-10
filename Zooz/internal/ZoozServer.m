@@ -98,7 +98,7 @@
             ZLog(@"%@ Failed Error: %@",methodName ,error.localizedDescription);
         }
         
-        mainQueue(^{completion(zsError,dict);});
+        completion(zsError,dict);
     }];
     [task resume];
 }

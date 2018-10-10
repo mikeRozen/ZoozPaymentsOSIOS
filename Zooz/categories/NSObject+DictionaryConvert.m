@@ -8,6 +8,7 @@
 
 #import "NSObject+DictionaryConvert.h"
 #import <objc/runtime.h>
+#import "ZoozLogger.h"
 
 @implementation NSObject (DictionaryConvert)
 + (NSDictionary *)dictionaryWithPropertiesOfObject:(id)obj{
@@ -59,7 +60,7 @@
         if (!object){
             continue;
         }
-         NSLog(@"typeClass = %@, object type = %@, propertyName = %@,attributes = %@",typeClass,[object class],propertyName,attributesStr);
+        ZLog(@"typeClass = %@, object type = %@, propertyName = %@,attributes = %@",typeClass,[object class],propertyName,attributesStr);
         if (!typeClass){
             [self setValue:object forKey:propertyName];
             continue;
@@ -76,7 +77,7 @@
             }
             [self setValue:subObj forKey:propertyName];
         }else{
-            NSLog(@"No Foundation Calss Is Found");
+            ZLog(@"No Foundation Calss Is Found");
             id customeClass = [[typeClass alloc] init];
             [customeClass classWithPropertiesOfDictionary:object];
             [self setValue:customeClass forKey:propertyName];
@@ -133,7 +134,7 @@
     objc_property_t *properties = class_copyPropertyList([obj class], &count);
     for (int i = 0; i < count; i++) {
         NSString *key = [NSString stringWithUTF8String:property_getName(properties[i])];
-        NSLog(@"key = %@",key);
+        ZLog(@"key = %@",key);
     }
     free(properties);
 }

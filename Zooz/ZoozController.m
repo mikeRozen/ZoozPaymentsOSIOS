@@ -49,7 +49,7 @@
         ZLog(@"Create Token response  = %@",response);
         ZoozPaymentMethodDetails *payment = [[ZoozPaymentMethodDetails alloc] initWithDictionary:response];
         NSDictionary *dict = @{@"response": response,@"paymentMethod": payment};
-        completion(error,dict);
+        mainQueue(^{completion(error,dict);});
     };
     [_zoozServer createToken:request withUrl:url completionHandler:complete];
 }
@@ -62,7 +62,7 @@
         ZLog(@"Create Customer response  = %@",response);
         ZoozCustomer *customer = [[ZoozCustomer alloc] initWithDictioanry:response];
         NSDictionary *dict = @{@"response" : response,@"customer":customer};
-        completion(error,dict);
+        mainQueue(^{completion(error,dict);});
     };
     [_zoozServer createCustomer:request withUrl:url completionHandler:complete];
 };
@@ -77,7 +77,7 @@
         ZLog(@"Store Token in Customer  = %@",response);
         ZoozPaymentMethodDetails *payment = [[ZoozPaymentMethodDetails alloc] initWithDictionary:response];
         NSDictionary *dict = @{@"response" : response,@"paymentMethod": payment};
-        completion(error,dict);
+        mainQueue(^{completion(error,dict);});
     };
     [_zoozServer storeToken:token inCustomer:customer withUrl:url completionHandler:complete];
 }
@@ -90,7 +90,7 @@
     
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"DeleteToken of Customer  = %@",response);
-        completion(error,response);
+        mainQueue(^{completion(error,response);});
     };
     [_zoozServer deleteToken:token inCustomer:customer withUrl:url completionHandler:complete];
 }
@@ -104,7 +104,7 @@
         ZLog(@"retriveCustomer  = %@",response);
         ZoozCustomer *customer = [[ZoozCustomer alloc] initWithDictioanry:response];
         NSDictionary *dict = @{@"response": response,@"customer":customer};
-        completion(error,dict);
+        mainQueue(^{completion(error,dict);});
     };
     [_zoozServer retrieveCustomerbByReferenceWithUrl:url completionHandler:complete];
 }
