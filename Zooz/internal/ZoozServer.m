@@ -64,75 +64,41 @@
 
 - (void)createToken:(ZoozRequest *)requestData withUrl:(NSURL *)url completionHandler:(Completion)completion{
     NSMutableURLRequest *request = [self requestMethod:@"POST" url:url requestBody:[requestData toJsonData]];
-    NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error == nil){
-            NSDictionary *dict = [self parsingData:data];
-            NSError *error = [self internalError:response];
-            completion(error,dict);
-        }else{
-            ZLog(@"createToken Failed Error: %@", error.localizedDescription);
-            completion(error,nil);
-        }
-    }];
-    [task resume];
+    [self executeRequest:request methodName:@"createToken" completionHandler:completion];
 }
 
 - (void)createCustomer:(ZoozRequest *)requestData withUrl:(NSURL *)url completionHandler:(Completion)completion{
     NSMutableURLRequest *request = [self requestMethod:@"POST" url:url requestBody:[requestData toJsonData]];
-    NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error == nil){
-            NSDictionary *dict = [self parsingData:data];
-            NSError *error = [self internalError:response];
-            completion(error,dict);
-        }else{
-            ZLog(@"createCustomer Failed Error: %@", error.localizedDescription);
-            completion(error,nil);
-        }
-    }];
-    [task resume];
+    [self executeRequest:request methodName:@"createCustomer" completionHandler:completion];
 }
 
 - (void)storeToken:(NSString *)token inCustomer:(ZoozCustomer *)customer withUrl:(NSURL *)url completionHandler:(Completion)completion{
     NSMutableURLRequest *request = [self requestMethod:@"POST" url:url requestBody:nil];
-    NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error == nil){
-            NSDictionary *dict = [self parsingData:data];
-            NSError *error = [self internalError:response];
-            completion(error,dict);
-        }else{
-            ZLog(@"Stored token Failed Error: %@", error.localizedDescription);
-            completion(error,nil);
-        }
-    }];
-    [task resume];
+    [self executeRequest:request methodName:@"storeToken" completionHandler:completion];
 }
 
 - (void)deleteToken:(NSString *)token inCustomer:(ZoozCustomer *)customer withUrl:(NSURL *)url completionHandler:(Completion)completion{
     NSMutableURLRequest *request = [self requestMethod:@"DELETE" url:url requestBody:nil];
-    NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error == nil){
-            NSDictionary *dict = [self parsingData:data];
-            NSError *error = [self internalError:response];
-            completion(error,dict);
-        }else{
-            ZLog(@"Stored token Failed Error: %@", error.localizedDescription);
-            completion(error,nil);
-        }
-    }];
-    [task resume];
+    [self executeRequest:request methodName:@"deleteToken" completionHandler:completion];
 }
 
 - (void)retrieveCustomerbByReferenceWithUrl:(NSURL *)url completionHandler:(Completion)completion{
     NSMutableURLRequest *request = [self requestMethod:@"GET" url:url requestBody:nil];
+    [self executeRequest:request methodName:@"retrieveCustomerbByReferenceWithUrl" completionHandler:completion];
+}
+
+- (void)executeRequest:(NSMutableURLRequest *)request methodName:(NSString *)methodName completionHandler:(Completion)completion{
     NSURLSessionDataTask *task = [_session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error == nil){
-            NSDictionary *dict = [self parsingData:data];
-            NSError *error = [self internalError:response];
-            completion(error,dict);
+        NSDictionary *dict = nil;
+        NSError *zsError = error;
+        if (zsError == nil){
+            dict = [self parsingData:data];
+            zsError = [self internalError:response];
         }else{
-            ZLog(@"RetrieveCustomerbByReferenceWithUrl Failed Error: %@", error.localizedDescription);
-            completion(error,nil);
+            ZLog(@"%@ Failed Error: %@",methodName ,error.localizedDescription);
         }
+        
+        mainQueue(^{completion(zsError,dict);});
     }];
     [task resume];
 }

@@ -17,5 +17,10 @@ static inline BOOL isEmpty(id thing){
         && [(NSArray *)thing count] == 0);
 }
 
+static inline void mainQueue(dispatch_block_t block){
+    dispatch_async(dispatch_get_main_queue(), block);
+    return;
+}
+
 
 #endif /* Zooz_Constants_h */
