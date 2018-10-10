@@ -11,4 +11,5 @@
 @interface ZoozObject : NSObject
 
 - (NSDictionary *)toDictionary;
+- (Class)propertyGenericClass:(NSString *)propertyName;
 @end

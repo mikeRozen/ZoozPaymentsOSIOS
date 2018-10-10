@@ -22,6 +22,16 @@
     return [NSObject dictionaryWithPropertiesOfObject:self];
 }
 
+//Its NOT the best work around - Unfortunaltelly I don't think tere is
+//a proper way to get the generic type of NSArray
+- (Class)propertyGenericClass:(NSString *)propertyName{
+    if ([propertyName isEqualToString:@"paymentMethods"]){
+        return NSClassFromString(@"ZoozPaymentMethodDetails");
+    }
+    return nil;
+}
+
+
 
 
 

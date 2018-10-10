@@ -71,9 +71,18 @@
             continue;
         }else if(typeClass == [NSArray class] || typeClass == [NSMutableArray class]){
             NSMutableArray *subObj = [NSMutableArray array];
-            for (id o in object) {
-                [o classWithPropertiesOfDictionary:o];
-                [subObj addObject:o];
+            //Ugly solution !!!! - Supress warning
+            Class genericClass;
+            SEL selector = NSSelectorFromString(@"propertyGenericClass:");
+            if ([self respondsToSelector:selector]){
+                genericClass = [self performSelector:selector withObject:propertyName];
+            }
+            if (genericClass){
+                for (id o in object) {
+                    id genericElement = [genericClass new];
+                    [genericElement classWithPropertiesOfDictionary:o];
+                    [subObj addObject:genericElement];
+                }
             }
             [self setValue:subObj forKey:propertyName];
         }else{
