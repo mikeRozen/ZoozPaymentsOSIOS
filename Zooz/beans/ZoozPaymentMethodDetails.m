@@ -30,6 +30,10 @@
     return [NSString stringWithFormat:@"%@/%@", _expirationMonth, self.expirationYear];
 }
 
+- (void)setExpirationMonth:(NSString *)expirationMonth{
+    _expirationMonth = [NSString stringWithFormat:@"%02d",[expirationMonth intValue]];
+}
+
 
 - (BOOL)isEqual:(id)object{
     if (self == object){
