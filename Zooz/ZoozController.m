@@ -90,7 +90,8 @@
     
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"DeleteToken of Customer  = %@",response);
-        mainQueue(^{completion(error,response);});
+        NSDictionary *dict = @{@"response": response};
+        mainQueue(^{completion(error,dict);});
     };
     [_zoozServer deleteToken:token inCustomer:customer withUrl:url completionHandler:complete];
 }

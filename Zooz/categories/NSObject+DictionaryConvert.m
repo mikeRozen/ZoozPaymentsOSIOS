@@ -11,6 +11,7 @@
 #import "ZoozLogger.h"
 #import "NSString+CamelSnakeCase.h"
 
+
 @implementation NSObject (DictionaryConvert)
 + (NSDictionary *)dictionaryWithPropertiesOfObject:(id)obj{
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -74,9 +75,10 @@
             NSMutableArray *subObj = [NSMutableArray array];
             //TODO: Ugly solution !!!! - Supress warning
             Class genericClass;
-            SEL selector = NSSelectorFromString(@"propertyGenericClass:");
-            if ([self respondsToSelector:selector]){
-                genericClass = [self performSelector:selector withObject:propertyName];
+            //SEL selector = NSSelectorFromString(@"propertyGenericClass:");
+            #pragma GCC diagnostic ignored "-Wundeclared-selector"
+            if ([self respondsToSelector:@selector(propertyGenericClass:)]){
+                genericClass = [self performSelector:@selector(propertyGenericClass:) withObject:propertyName];
             }
             if (genericClass){
                 for (id o in object) {
