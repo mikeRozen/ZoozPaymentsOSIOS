@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1D04D17216F365300870428 /* NSString+CamelSnakeCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D04D15216F365300870428 /* NSString+CamelSnakeCase.h */; };
+		E1D04D18216F365300870428 /* NSString+CamelSnakeCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D04D16216F365300870428 /* NSString+CamelSnakeCase.m */; };
 		E1D2DF89214FF1C400F213D1 /* Zooz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D2DF7F214FF1C400F213D1 /* Zooz.framework */; };
 		E1D2DF8E214FF1C500F213D1 /* ZoozTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D2DF8D214FF1C500F213D1 /* ZoozTests.m */; };
 		E1D2DF90214FF1C500F213D1 /* Zooz.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D2DF82214FF1C400F213D1 /* Zooz.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1D04D15216F365300870428 /* NSString+CamelSnakeCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CamelSnakeCase.h"; sourceTree = "<group>"; };
+		E1D04D16216F365300870428 /* NSString+CamelSnakeCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CamelSnakeCase.m"; sourceTree = "<group>"; };
 		E1D2DF7F214FF1C400F213D1 /* Zooz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zooz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D2DF82214FF1C400F213D1 /* Zooz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zooz.h; sourceTree = "<group>"; };
 		E1D2DF83214FF1C400F213D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			children = (
 				E1D2DFEE215AD86900F213D1 /* NSObject+DictionaryConvert.h */,
 				E1D2DFEF215AD86900F213D1 /* NSObject+DictionaryConvert.m */,
+				E1D04D15216F365300870428 /* NSString+CamelSnakeCase.h */,
+				E1D04D16216F365300870428 /* NSString+CamelSnakeCase.m */,
 			);
 			path = categories;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				E1D2DFF0215AD86900F213D1 /* NSObject+DictionaryConvert.h in Headers */,
 				E1D2E000215BE20600F213D1 /* ZoozItem.h in Headers */,
 				E1D2DFF4215B82CD00F213D1 /* ZoozLogger.h in Headers */,
+				E1D04D17216F365300870428 /* NSString+CamelSnakeCase.h in Headers */,
 				E1D2DFD32156E12A00F213D1 /* Zooz-Constants.h in Headers */,
 				E1D2DFE8215A760400F213D1 /* ZoozResponse.h in Headers */,
 				E1D2DF9B214FF26900F213D1 /* ZoozController.h in Headers */,
@@ -357,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D04D18216F365300870428 /* NSString+CamelSnakeCase.m in Sources */,
 				E1D2DFD82157D48E00F213D1 /* ZoozAddress.m in Sources */,
 				E1D2DFFD215BE18C00F213D1 /* ZoozOrder.m in Sources */,
 				E1D2E001215BE20600F213D1 /* ZoozItem.m in Sources */,

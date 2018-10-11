@@ -9,6 +9,7 @@
 #import "NSObject+DictionaryConvert.h"
 #import <objc/runtime.h>
 #import "ZoozLogger.h"
+#import "NSString+CamelSnakeCase.h"
 
 @implementation NSObject (DictionaryConvert)
 + (NSDictionary *)dictionaryWithPropertiesOfObject:(id)obj{
@@ -20,7 +21,7 @@
     for (int i = 0; i < count; i++) {
         NSString *key = [NSString stringWithUTF8String:property_getName(properties[i])];
         id object = [obj valueForKey:key];
-        key = [self snakeCase:key];
+        key = [NSString snakeCase:key];
         
         if (!object){continue;}
         if ([object isKindOfClass:[NSNumber class]] ||[object isKindOfClass:[NSString class]] || [object isKindOfClass:[NSDictionary class]]){
@@ -53,7 +54,7 @@
         }
         Class typeClass = [self typeFromAttributes:attributesStr attributes:attributes];
         
-        NSString *key = [NSObject snakeCase:propertyName];
+        NSString *key = [NSString snakeCase:propertyName];
         id object = dict[key];
       
         //We have object and its assosicated class from our zoozClass
@@ -71,7 +72,7 @@
             continue;
         }else if(typeClass == [NSArray class] || typeClass == [NSMutableArray class]){
             NSMutableArray *subObj = [NSMutableArray array];
-            //Ugly solution !!!! - Supress warning
+            //TODO: Ugly solution !!!! - Supress warning
             Class genericClass;
             SEL selector = NSSelectorFromString(@"propertyGenericClass:");
             if ([self respondsToSelector:selector]){
@@ -115,28 +116,6 @@
     }
 }
 
-//TODO: move to NSString Category
-+ (NSString *)camelCase:(NSString *)key{
-    NSArray *components = [key componentsSeparatedByString:@"_"];
-    NSMutableString *camelCaseString = [NSMutableString new];
-    [components enumerateObjectsUsingBlock:^(NSString *component, NSUInteger idx, BOOL *stop) {
-        [camelCaseString appendString:(idx == 0 ? component : [component capitalizedString])];
-    }];
-    return [camelCaseString copy];
-}
-
-+ (NSString *)snakeCase:(NSString *)propertyName{
-    NSMutableString *result = [NSMutableString stringWithString:propertyName];
-    NSRange range;
-    
-    range = [result rangeOfCharacterFromSet:[NSCharacterSet uppercaseLetterCharacterSet]];
-    while (range.location != NSNotFound){
-        NSString *lower = [result substringWithRange:range].lowercaseString;
-        [result replaceCharactersInRange:range withString:[NSString stringWithFormat:@"_%@", lower]];
-        range = [result rangeOfCharacterFromSet:[NSCharacterSet uppercaseLetterCharacterSet]];
-    }
-    return result;
-}
 
 + (void)printAllProperties:(id)obj{
     unsigned count;

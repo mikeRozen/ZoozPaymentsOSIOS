@@ -10,7 +10,6 @@
 
 @interface NSObject (DictionaryConvert)
 + (NSDictionary *)dictionaryWithPropertiesOfObject:(id)obj;
-+ (NSString *)camelCase:(NSString *)key;
 - (void)classWithPropertiesOfDictionary:(NSDictionary *)dict;
 
 @end
