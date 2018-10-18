@@ -13,13 +13,16 @@
 @class ZoozIdentityDocuments;
 @interface ZoozPaymentMethodDetails : ZoozObject
 
+@property (nonatomic) NSString *cardNumber;
+@property (nonatomic) NSString *creditCardCvv;
 @property (nonatomic) NSString *expirationMonth;
 @property (nonatomic) NSString *expirationYear;
 @property (nonatomic,readonly) NSString *expirationDate;
 @property (nonatomic) NSString *holderName;
-@property (nonatomic) NSString *creditCardCvv;
-@property (nonatomic) NSString *cardNumber;
+@property (nonatomic) NSString *last4Digits;
 @property (nonatomic) NSString *tokenType;
+@property (nonatomic) NSString *token;
+
 @property (nonatomic) ZoozAddress *billingAddress;
 @property (nonatomic) ZoozIdentityDocuments *identityDocuments;
 @property (nonatomic) NSDictionary *additionalDetails;
@@ -32,12 +35,12 @@
 @property (nonatomic) NSString *level;
 @property (nonatomic) NSString *countryCode;
 @property (nonatomic) NSString *state;
-@property (nonatomic) NSString *token;
+
 @property (nonatomic) NSString *created;
 @property (nonatomic) NSString *type;
 @property (nonatomic) NSString *href;
 @property (nonatomic) NSString *customer;
-@property (nonatomic) NSString *last4Digits;
+
 @property (nonatomic) NSString *issuer;
 
 

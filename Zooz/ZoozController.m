@@ -48,7 +48,7 @@
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"Create Token response  = %@",response);
         ZoozPaymentMethodDetails *payment = [[ZoozPaymentMethodDetails alloc] initWithDictionary:response];
-        NSDictionary *dict = @{@"response": response,@"paymentMethod": payment};
+        NSDictionary *dict = @{@"response": response ?: @{},@"paymentMethod": payment};
         mainQueue(^{completion(error,dict);});
     };
     [_zoozServer createToken:request withUrl:url completionHandler:complete];
@@ -61,7 +61,7 @@
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"Create Customer response  = %@",response);
         ZoozCustomer *customer = [[ZoozCustomer alloc] initWithDictioanry:response];
-        NSDictionary *dict = @{@"response" : response,@"customer":customer};
+        NSDictionary *dict = @{@"response" : response ?: @{},@"customer":customer};
         mainQueue(^{completion(error,dict);});
     };
     [_zoozServer createCustomer:request withUrl:url completionHandler:complete];
@@ -76,7 +76,7 @@
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"Store Token in Customer  = %@",response);
         ZoozPaymentMethodDetails *payment = [[ZoozPaymentMethodDetails alloc] initWithDictionary:response];
-        NSDictionary *dict = @{@"response" : response,@"paymentMethod": payment};
+        NSDictionary *dict = @{@"response" : response ?: @{},@"paymentMethod": payment};
         mainQueue(^{completion(error,dict);});
     };
     [_zoozServer storeToken:token inCustomer:customer withUrl:url completionHandler:complete];
@@ -90,7 +90,7 @@
     
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"DeleteToken of Customer  = %@",response);
-        NSDictionary *dict = @{@"response": response};
+        NSDictionary *dict = @{@"response": response ?: @{}};
         mainQueue(^{completion(error,dict);});
     };
     [_zoozServer deleteToken:token inCustomer:customer withUrl:url completionHandler:complete];
@@ -104,7 +104,7 @@
     Completion complete = ^(NSError *error,NSDictionary *response){
         ZLog(@"retriveCustomer  = %@",response);
         ZoozCustomer *customer = [[ZoozCustomer alloc] initWithDictioanry:response];
-        NSDictionary *dict = @{@"response": response,@"customer":customer};
+        NSDictionary *dict = @{@"response": response ?: @{},@"customer":customer};
         mainQueue(^{completion(error,dict);});
     };
     [_zoozServer retrieveCustomerbByReferenceWithUrl:url completionHandler:complete];

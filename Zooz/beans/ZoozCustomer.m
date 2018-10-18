@@ -29,7 +29,6 @@
 - (void)addPaymentMethodToken:(ZoozPaymentMethodDetails *)payment{
     if (!_paymentMethods){
         _paymentMethods = [NSMutableArray new];
-        return;
     }
     if (![_paymentMethods containsObject:payment]){
         [_paymentMethods addObject:payment];
