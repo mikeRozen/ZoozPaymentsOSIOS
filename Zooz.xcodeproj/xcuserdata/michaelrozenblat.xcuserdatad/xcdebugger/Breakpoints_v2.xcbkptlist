@@ -105,7 +105,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.283087"
+            timestampString = "561552572.942793"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -121,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.283529"
+            timestampString = "561552572.943283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-testSimple"
             landmarkType = "7">
          </BreakpointContent>
@@ -153,11 +153,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.28443"
+            timestampString = "561552572.943691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-testAddCustomer"
             landmarkType = "7">
          </BreakpointContent>
@@ -169,7 +169,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.284891"
+            timestampString = "561552572.944006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -185,11 +185,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.2852941"
+            timestampString = "561552572.944298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-testStoreToken"
             landmarkType = "7">
          </BreakpointContent>
@@ -201,11 +201,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.285673"
+            timestampString = "561552572.944589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "-testSimple"
             landmarkType = "7">
          </BreakpointContent>
@@ -217,11 +217,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.2860759"
+            timestampString = "561552572.944894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "-testSimple"
             landmarkType = "7">
          </BreakpointContent>
@@ -360,11 +360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.288182"
+            timestampString = "561552572.945503"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "-testPerformanceExample"
             landmarkType = "7">
          </BreakpointContent>
@@ -376,11 +376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.288625"
+            timestampString = "561552572.945877"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "-testPerformanceExample"
             landmarkType = "7">
          </BreakpointContent>
@@ -392,7 +392,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "561212384.28907"
+            timestampString = "561552572.946201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
@@ -424,7 +424,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/beans/ZoozCustomer.m"
-            timestampString = "560858103.630975"
+            timestampString = "561552572.946822"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -440,7 +440,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "561212384.291525"
+            timestampString = "561552572.9471051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -536,11 +536,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/beans/ZoozPaymentMethodDetails.m"
-            timestampString = "561212384.2946219"
+            timestampString = "561552572.947729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "-initWithDictionary:"
             landmarkType = "7">
          </BreakpointContent>
@@ -600,7 +600,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zooz/categories/NSObject+DictionaryConvert.m"
-            timestampString = "561212384.296325"
+            timestampString = "561552572.967916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
@@ -612,17 +612,283 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZoozTests/ZoozTests.m"
-            timestampString = "561212384.298311"
+            timestampString = "561552572.9719959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
             landmarkName = "-testAddCard"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoozTests/ZoozTests.m"
+            timestampString = "561552572.972419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-testStoreToken"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoozTests/ZoozTests.m"
+            timestampString = "561552572.972793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "-testStoreToken"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__27-[ZoozTests testStoreToken]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561546287.420548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__27-[ZoozTests testStoreToken]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561546287.423546"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "541">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__27-[ZoozTests testStoreToken]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561546287.426994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "663">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__27-[ZoozTests testStoreToken]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561546287.430355"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "772">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoozTests/ZoozTests.m"
+            timestampString = "561552572.973145"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-testDeletePaymentMethod"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ZoozTests testDeletePaymentMethod]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.464047"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ZoozTests testDeletePaymentMethod]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.4729739"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ZoozTests testDeletePaymentMethod]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.478938"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "606">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[ZoozTests testDeletePaymentMethod]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.484603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "715">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoozTests/ZoozTests.m"
+            timestampString = "561552572.973453"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "-testDeletePaymentMethod"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoozTests/ZoozTests.m"
+            timestampString = "561552572.973753"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "-testRetriveCustomerByReference"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[ZoozTests testRetriveCustomerByReference]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.4929841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[ZoozTests testRetriveCustomerByReference]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.497429"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "541">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[ZoozTests testRetriveCustomerByReference]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.502431"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "663">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[ZoozTests testRetriveCustomerByReference]_block_invoke"
+                  moduleName = "ZoozTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michaelrozenblat/Desktop/Repositories/Zooz/Zooz/ZoozTests/ZoozTests.m"
+                  timestampString = "561552576.506189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
+                  offsetFromSymbolStart = "772">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -9,6 +9,7 @@
 #import "ZoozPaymentMethodDetails.h"
 #import "ZoozAddress.h"
 #import "NSObject+DictionaryConvert.h"
+#import "ZoozLogger.h"
 
 @implementation ZoozPaymentMethodDetails
 
@@ -28,6 +29,18 @@
 
 - (NSString *)expirationDate{
     return [NSString stringWithFormat:@"%@/%@", _expirationMonth, self.expirationYear];
+}
+
+- (void)setExpirationDate:(NSString *)expirationDate{
+    if (!expirationDate){return;}
+    NSArray *datePartsStr = [expirationDate componentsSeparatedByString:@"/"];
+    if (datePartsStr.count != 2){
+        ZLog(@"Expiration Date Parse failed");
+    }
+    NSString *month = datePartsStr[0];
+    NSString *year = datePartsStr[1];
+    self.expirationMonth = month;
+    self.expirationYear = year;
 }
 
 - (void)setExpirationMonth:(NSString *)expirationMonth{
