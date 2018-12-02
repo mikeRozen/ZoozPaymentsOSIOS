@@ -47,7 +47,6 @@
     _expirationMonth = [NSString stringWithFormat:@"%02d",[expirationMonth intValue]];
 }
 
-
 - (BOOL)isEqual:(id)object{
     if (self == object){
         return YES;

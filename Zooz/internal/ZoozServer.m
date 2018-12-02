@@ -127,7 +127,10 @@
     NSHTTPURLResponse *response = (NSHTTPURLResponse *)originResponse;
     if ((response.statusCode >= 300 || response.statusCode < 200)) {
         //We may need to split the errors in different error domain
-        NSError *error = [[NSError alloc] initWithDomain:@"Internal Error" code:1 userInfo:@{NSLocalizedDescriptionKey: @"Invalid user input"}];
+        ZLog(@"response  error = %@",response);
+        NSError *error = [[NSError alloc] initWithDomain:@"Internal Error" code:response.statusCode userInfo:
+                          @{NSLocalizedDescriptionKey: [NSHTTPURLResponse localizedStringForStatusCode:response.statusCode]
+                            }];
         return error;
     }
     return nil;
